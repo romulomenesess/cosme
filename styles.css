@@ -1,0 +1,333 @@
+:root {
+    --corPrimaria: #FEFAF6;
+    --corSecundaria: #EADBC8;
+    --corTerciaria: #DAC0A3;
+    --corQuartenaria: #464646;
+    --cortexto: #102C57;
+    --bg-produtos: #c2b09b;
+}
+
+.container__cabecalho{
+    background-color:var(--corPrimaria);
+    color: var(--cortexto);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.cabecalho__logo {
+    width: 5rem;
+    height: 5rem;
+}
+
+.cabecalho__botoes {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.cabecalho__botao {
+    color: var(--cortexto);
+    text-decoration: none;
+    padding: 0.8rem;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.container__apresentacao {
+    display: flex;
+}
+
+.apresentacao {
+    background-color: var(--corSecundaria);
+    color: var(--cortexto);
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem;
+    gap: 1.4rem;
+}
+
+.apresentacao__titulo, .atuacao__titulo,
+.produtos__titulo, .contato__titulo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding-bottom: 2rem;
+}
+
+.contato__titulo, .contato__paragrafo, .contato__redes {
+    padding: 1.8rem;
+}
+
+.apresentacao__paragrafo, .atuacao__paragrafo,
+.produtos__subtitulo, .produtos__paragrafo, .contato__paragrafo {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: justify;
+    padding: 0.4rem;
+    row-gap: 0.8rem;
+}
+
+.apresentacao__botao {
+    color: var(--cortexto);
+    text-decoration: none;
+    padding: 0.8rem;
+    background-color: var(--corPrimaria);
+    width: 7rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.apresentacao__botao:hover {
+    scale: 1.2;
+    transition: 300ms;
+}
+
+.assinatura {
+    width: 14rem;
+    padding-left: 1rem;
+}
+
+.atuacao {
+    display: flex;
+    background-color: var(--corTerciaria);
+    color: var(--preto);
+    padding: 1.8rem;
+    gap: 1.2rem;
+}
+
+.atuacao__conteudoEscrito, .produtos_conteudo {
+    display: flex;
+    flex-direction: column;
+}
+.imagem__atuacao {
+    width: 50%;
+    height: 20%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--corSecundaria);
+    color: var(--cortexto);
+    padding: 1.8rem;
+    gap: 1.4rem;
+}
+
+.produtos__conteudoEscrito {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: var(--bg-produtos);
+    font-weight: 700;
+    padding: 4rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.contexto1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 2rem;
+}
+
+.contexto2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 2rem;
+}
+
+.contexto1, .contexto2 {
+    gap: 4rem;
+}
+
+.imagem__produtos {
+    width: 40%;
+    height: 10%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+} 
+
+.background, .background2 {
+    background-image: url(./imgs/maquiagem.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+    border-top: 1px solid var(--cortexto);
+    border-bottom: 1px solid var(--cortexto);
+    padding: 150px;
+}
+
+.background2 {
+    background-image: url(./imgs/cosmetics.jpg);
+}
+.contato {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--corTerciaria);
+    color: var(--corQuartenaria);
+    gap: 1.2rem;
+}
+
+.formulario, .formulario2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.formulario2 {
+    background-color: var(--corSecundaria);
+    border: 1px solid var(--corQuartenaria);
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0.5, 0.75);
+}
+
+.nomeFormulario, .emailFormulario, .mensagemFormulario {
+    color: var(--cortexto);
+    font-size: 1.2rem;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.8rem;
+}
+
+.contato__redes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contato__botoes {
+    font-size: 1.2rem;
+    color: var(--preto);
+    border: 2px solid var(--corQuartenaria);
+    border-radius: 14px;
+    padding: 0.4rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.contato__botoes:hover {
+    scale: 1.2;
+    transition: 300ms;
+}
+
+#botao {
+    width: 4rem;
+}
+
+.imagens {
+    height: 2rem;
+    width: 2rem;
+}
+
+.rodape {
+    background-color: var(--corPrimaria);
+    color: var(--cortexto);
+    font-size: 1.7rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) and (max-width: 1428px) {
+    .apresentacao__paragrafo, .atuacao__paragrafo, .produtos__paragrafo {
+        font-weight: 550;
+    } 
+
+    .atuacao {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagem__atuacao img {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+@media (max-width: 767px) {
+    .cabecalho__botoes {
+        display: none;
+    }
+
+    .atuacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagem__atuacao {
+        display: flex;
+        width: 100%;
+    }
+
+    .mensagem {
+        height: 200px;
+    }
+
+    .contexto1, .contexto2 {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .produtos_conteudo {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+    .produtos__conteudoEscrito {
+        padding: 1rem;
+        width: auto;
+    }
+
+    .imagem__produtos {
+        padding: 1.2rem;
+        width: 100%;
+    }
+
+    .contato__redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .contato__botoes {
+        padding: 0.5rem;
+        width: 50%;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
