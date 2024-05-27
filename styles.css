@@ -51,7 +51,7 @@
 }
 
 .apresentacao__titulo, .atuacao__titulo,
-.produtos__titulo, .contato__titulo {
+.produtos__titulo, .contato__titulo, .mostruario__titulo {
     font-size: 1.8rem;
     font-weight: 800;
     padding-bottom: 2rem;
@@ -62,11 +62,11 @@
 }
 
 .apresentacao__paragrafo, .atuacao__paragrafo,
-.produtos__subtitulo, .produtos__paragrafo, .contato__paragrafo {
+.produtos__subtitulo, .produtos__paragrafo, .contato__paragrafo, .mostruario__subtitulo {
     font-size: 1.3rem;
     font-weight: 500;
     text-align: justify;
-    padding: 0.4rem;
+    padding: 0.8rem;
     row-gap: 0.8rem;
 }
 
@@ -132,6 +132,91 @@
     border-radius: 10px;
 }
 
+.mostruario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--corTerciaria);
+  }
+
+.mostruario__titulo, .mostruario__subtitulo {
+    padding: 1.5rem;
+    color: var(--corQuartenaria);
+  }
+  
+.categoria {
+    margin-bottom: 20px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.2rem;
+  }
+  
+.produtoMostruario {
+    border: 2px solid var(--cortexto);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+.produtoMostruario img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 0.8rem;
+  }
+  
+.produtoMostruario h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .produtoMostruario p {
+    font-size: 14px;
+    margin-bottom: 0.8rem;
+    padding: 0.8rem;
+  }
+  
+  .produtoMostruario a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: var(--corPrimaria);
+    text-decoration: none;
+  }
+  
+.filtrar-categoria {
+    width: 4rem;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #49882c;
+    padding: 1.2rem;
+    text-decoration: none;
+    margin: 1.5rem;
+  }
+
+.carrossel {
+    box-shadow: 2px 2px 4px #000;
+    width: 50%;
+    height: 100px;
+    overflow: hidden;
+    background-color: var(--corTerciaria);
+  }
+  
+.container-carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+  }
+  
+.carrossel img {
+    object-fit: cover;
+    height: 100px;
+    width: 100px
+  }
+
 .contexto1 {
     display: flex;
     justify-content: center;
@@ -186,7 +271,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .formulario2 {
@@ -266,6 +350,10 @@
         justify-content: center;
         align-items: center;
         
+    }
+
+    .contexto1, .contexto2 {
+        padding: 3rem;
     }
 }
 
