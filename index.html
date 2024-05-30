@@ -2,11 +2,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale = 1">
     <title>Cosmê</title>
 
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
@@ -15,10 +15,17 @@
         <ion-icon name="color-palette-outline"></ion-icon>
 
         <nav class="cabecalho__botoes">
-            <a href="#quemsomos" class="cabecalho__botao"> <img src="./imgs/people-outline.svg" alt="ícone de pessoas" class="imagens">Quem somos</a>
-            <a href="#oquefazemos" class="cabecalho__botao"> <img src="./imgs/information-circle-outline.svg" alt="ícone de onformação" class="imagens">O que fazemos</a>
-            <a href="#produtos" class="cabecalho__botao"><img src="./imgs/bag-check-outline.svg" alt="ícone de sacola" class="imagens">Nossos Produtos</a>
-            <a href="#contato" class="cabecalho__botao"> <img src="./imgs/call-outline.svg" alt="ícone de telefone" class="imagens">Contato</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#quemsomos" class="cabecalho__botao"><img src="./imgs/people-outline.svg" alt="ícone de pessoas" class="imagens">Quem somos</a></li>
+                <li><a href="#oquefazemos" class="cabecalho__botao"><img src="./imgs/information-circle-outline.svg" alt="ícone de onformação" class="imagens">O que fazemos</a></li>
+                <li><a href="#produtos" class="cabecalho__botao"><img src="./imgs/bag-check-outline.svg" alt="ícone de sacola" class="imagens">Nossos Produtos</a></li>
+                <li><a href="#contato" class="cabecalho__botao"> <img src="./imgs/call-outline.svg" alt="ícone de telefone" class="imagens">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -249,8 +256,6 @@
             </article>
         </div>
 
-
-        <button class="filtrar-categoria">Filtrar</button>
       </section>
 
       <div class="carrosel">
@@ -288,7 +293,7 @@
 
                 <div class="emailFormulario">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required style="height: 35px; width: 280px;">
+                <input type="email" id="email" name="email" required autocomplete="email" style="height: 35px; width: 280px;">
                 </div>
 
                 <div class="mensagemFormulario">
