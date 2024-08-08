@@ -154,10 +154,10 @@ body {
 .produtos__conteudoEscrito {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 35%;
     background-color: var(--bg-produtos);
-    font-weight: 700;
-    padding: 4rem;
+    font-weight: 800;
+    padding: 2rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
@@ -245,7 +245,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: justify;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .contexto2 {
@@ -254,10 +254,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: justify;
-    gap: 2rem;
-}
-
-.contexto1, .contexto2 {
     gap: 4rem;
 }
 
@@ -304,7 +300,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0.5, 0.75);
 }
 
-.nomeFormulario, .emailFormulario, .mensagemFormulario {
+.nomeFormulario {
     color: var(--cortexto);
     font-size: 1.2rem;
     font-weight: 900;

@@ -1,3 +1,24 @@
+//API 
+function ConectaApi() {
+    fetch('http://localhost:3000/produtos')
+    .then(response => response.json())
+    .then(data => {
+        const list = document.querySelector('#itensMostruario')
+
+        data.map((item) => {
+            const card = document.createElement('article');
+
+            card.setAttribute('id', item.nome);
+            card.innerHTML = item.nome;
+            card.innerHTML = item.preco;
+            card.innerHTML = item.descricao;
+            list.appendChild(card);
+        })
+    })
+}
+
+
+
 // Carrosel de imagens
 const images = document.getElementById("img");
 const img = document.querySelectorAll("#img img");
